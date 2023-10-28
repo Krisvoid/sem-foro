@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <
+
+    <h1>
+        Semáforo Funcional
+    </h1>
+
+    <style>
+
+        h1{
+            color: white;
+        }
+
+        body {
+            background-image: url(/Images/tunel.jpg);
+        }
+        .buttons
+        {
+            top: -500px;
+        }
+
+    </style>
+
+    <img id="apagado" src="/Images/apagado.png" />
+    
+    <div class="buttons">
+
+        <button onclick="verde()">
+            Verde
+        </button>
+        <button onclick="amarelo()">
+            Amarelo
+        </button>
+        <button onclick="vermelho()">
+            Vermelho
+        </button>
+        <button  onclick="apagado()">
+            Apagado
+        </button>
+
+
+    </div>
+   
+    <script>
+        var img = document.getElementById("apagado");
+        function apagado()
+        {
+            img.src ='/Images/apagado.png'
+        }
+        function verde()
+        {
+            img.src = '/Images/verde.png'
+        }
+        function amarelo()
+        {
+            img.src = '/Images/amarelo.png'
+        }
+        function vermelho()
+        {
+            img.src = '/Images/vermelho.png'
+        }
+    </script>
+
+</body>
+</html>
